@@ -1,0 +1,9 @@
+.mainnav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: contents;
+    align-items: center;
+}

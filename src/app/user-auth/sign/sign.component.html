@@ -1,0 +1,9 @@
+<p>sign works!</p>
+<input type="text" #getValues placeholder="Enter Name" name="name" />
+<!-- TO GET NAME VALUE -->
+<button (click)="getValue(getValues.name)">click To Print Value</button>
+<!-- TO GET PLACE HOLDER VALUE -->
+<button (click)="getValue(getValues.placeholder)">click To Print Value</button>
+<!-- TO GET ONPUT VALUE -->
+<button (click)="getValue(getValues.value)">click To Print Value</button>
+<p>Your Type Value Is : {{displayval}}</p>

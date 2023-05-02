@@ -1,0 +1,10 @@
+<p>nested-foor-loop works!</p>
+<h1>{{title}}</h1>
+<ul *ngFor="let user of users">
+    <li>{{user.name}}</li>
+    <li>{{user.phone}}</li>
+    <h1>Social Accounts</h1>
+    <ul *ngFor="let account of user.socialAccount">
+        <li>{{account}}</li>
+    </ul>
+</ul>
