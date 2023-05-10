@@ -1,4 +1,69 @@
+<h1 class="heading">Hello Angular {{title}} {{ data}}</h1>
+<h1 class="heading2">Hello This is style in html file</h1>
+<!-- STYLE -->
+<style>
+    .heading2 {
+        color: blue;
+    }
+</style>
+<!-- INLINE STYLE -->
+<h1 style="color:red">hey this style in inline style</h1>
+<!-- CONDITION IN INTERPOLATION -->
+<h1>{{title == 'blog'}}</h1>
+<h1 class={{title}}>{{datas}}</h1>
+<h1>
+    Property Binding Example
+</h1>
+<!-- PROPERTY BINDING -->
+<input type="text" name="user-name" value="{{name}}" disabled={{disable}}>
+<br />
+<input type="text" name="user-name" [value]=name [disabled]=disable />
+<button (click)="onclickdisable()">disable false</button>
+<br />
+<br />
+<!--IF ELSE CONDITION  -->
+<h1>{{title2}}</h1>
+<h1 *ngIf="show==='yes' ; then ifBlock else elseBlock"></h1>
+<ng-template #ifBlock>
+    <h1>If condition</h1>
+</ng-template>
+<ng-template #elseBlock>
+    <h1>Else Condition</h1>
+</ng-template>
+<app-user-list-data></app-user-list-data>
+<app-student-list></app-student-list>
+<app-user-admin></app-user-admin>
+<app-sign-up></app-sign-up>
+<app-sign></app-sign>
+<app-user-list></app-user-list>
+<app-register></app-register>
+<app-login></app-login>
+<app-nested-foor-loop></app-nested-foor-loop>
+<app-style-binding></app-style-binding>
 <!-- INTERPOLATION -->
 <!-- <app-header></app-header> -->
 <app-user-form></app-user-form>
 <app-toogl-element></app-toogl-element>
+<app-bootstrap></app-bootstrap>
+<app-materialui></app-materialui>
+<app-todo-task></app-todo-task>
+<app-child [item]="childdata"></app-child>
+<button (click)="updatechild()">Update Child data</button>
+<ul *ngFor="let user of userDetaiils">
+    <app-resuablecomponents [item]="user"></app-resuablecomponents>
+</ul>
+<br /><br />
+<h1>{{itemdata}}</h1>
+<app-childparent (updateDataEvent)="updateData($event)"></app-childparent>
+<br /><br />
+<app-twoway-binding></app-twoway-binding>
+<br /><br />
+<app-typescript></app-typescript>
+<app-basic-pipes></app-basic-pipes>
+<!-- Custom pipes -->
+<h1>{{titlesofpipes}}</h1>
+<h2>{{20 | usdInr : 100 }}</h2>
+<app-form></app-form>
+<!-- directives -->
+<h1>{{directive}}</h1>
+<h1 appRedEl>{{directive}}</h1>

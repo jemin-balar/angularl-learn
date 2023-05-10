@@ -19,4 +19,27 @@ export class AppComponent {
   getvlue(){
     return "get function data"
   }
+  //  child to component
+  childdata = 10
+  updatechild()
+  {
+    this.childdata =Math.floor(Math.random()*10)
+  }
+  //  Resuable components
+  userDetaiils=[
+    {name:"jems balar", email:"jems@TestScheduler.com"},
+    {name:"balar", email:"balar@TestScheduler.com"},
+    {name:"ks balar", email:"ks@TestScheduler.com"},
+    {name:"hb balar", email:"jems@test.com"},  
+  ]
+  // Child to parent components
+  itemdata="x"
+    updateData(item:string)
+  {
+    this.itemdata = item
+  }
+  // CUSTOM PIPES
+titlesofpipes= "CUSTOM PIPES"
+// directive
+directive = "directives in angular"
 }

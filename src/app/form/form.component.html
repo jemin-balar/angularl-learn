@@ -1,0 +1,24 @@
+<p>form works!</p>
+<form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+    <input type="text" ngModel placeholder="Enter Name" name="names" />
+    <br />
+    <br />
+    <input type="password" ngModel placeholder="Enter password" name="passwords">
+    <br />
+    <br />
+    <button>Login</button>
+</form>
+<button (click)="userLogin(loginForm.controls)">Outside Login</button>
+<!-- REACTIVE FORMS --> <!-- REACTIVE FORMS -->
+<!-- REACTIVE FORMS --> <!-- REACTIVE FORMS -->
+<form [formGroup]="signinForm" (ngSubmit)="loginuser()">
+    <input type="text" placeholder="Enter Name" name="user" formControlName="user" />
+    <br />
+    <span style="color: red;" *ngIf="user && user.invalid && user.touched">This field is not valid</span>
+    <br />
+    <input type="password" placeholder="Enter password" name="password" formControlName="password">
+    <br />
+    <span style="color: red;" *ngIf="password && password.invalid && password.touched">This field is not valid</span>
+    <br />
+    <button [disabled]="signinForm.invalid">Login</button>
+</form>
