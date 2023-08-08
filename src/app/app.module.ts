@@ -20,8 +20,8 @@ import { BootstrapComponent } from './bootstrap/bootstrap.component';
 import { MaterialuiComponent } from './materialui/materialui.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import {MatButtonModule} from "@angular/material/button"
-import {MatBadgeModule}  from "@angular/material/badge";
+import { MatButtonModule } from '@angular/material/button';
+import { MatBadgeModule } from '@angular/material/badge';
 import { TodoTaskComponent } from './todo-task/todo-task.component';
 import { ChildComponent } from './child/child.component';
 import { ResuablecomponentsComponent } from './resuablecomponents/resuablecomponents.component';
@@ -34,8 +34,6 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RedElDirective } from './red-el.directive';
-
-
 
 @NgModule({
   declarations: [
@@ -67,17 +65,17 @@ import { RedElDirective } from './red-el.directive';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
     UserAuthModule,
-    FormsModule, // its use to form 
+    FormsModule, // its use to form
     NgbModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
     MatButtonModule,
     MatBadgeModule,
-    ReactiveFormsModule  // reactive forms
+    ReactiveFormsModule, // reactive forms
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class StyleBindingComponent {
   title = 'STYLE BINDING';
   color = 'green';
-  bgColor = "black";
-  updateColor(){
-    this.color = 'blue'
-    this.bgColor = 'orange'
+  bgColor = 'black';
+  updateColor() {
+    this.color = 'blue';
+    this.bgColor = 'orange';
   }
 }

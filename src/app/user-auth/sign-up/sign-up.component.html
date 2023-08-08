@@ -1,17 +1,39 @@
 <p>sign-up works!</p>
 <button (click)="getName()">click for function call</button>
-<button (click)="getNumber(123456 ,'abcd')">click for me get number function call</button>
+<button (click)="getNumber(123456, 'abcd')">
+  click for me get number function call
+</button>
 <!-- <button (click)="getData()">call function in warn</button> -->
 <br /><br />
-<input type="text" placeholder="event keyup" #box (keyup)="getData(box.value)" />
+<input
+  type="text"
+  placeholder="event keyup"
+  #box
+  (keyup)="getData(box.value)"
+/>
 <br />
-<input type="text" placeholder="event keydown" #box1 (keydown)="getData(box1.value)" />
+<input
+  type="text"
+  placeholder="event keydown"
+  #box1
+  (keydown)="getData(box1.value)"
+/>
 <br />
-<input type="text" placeholder="event blur" #box2 (blur)="getData(box2.value)" />
+<input
+  type="text"
+  placeholder="event blur"
+  #box2
+  (blur)="getData(box2.value)"
+/>
 <br />
-<input type="text" placeholder="event Input" #box3 (input)="getData(box3.value)" />
+<input
+  type="text"
+  placeholder="event Input"
+  #box3
+  (input)="getData(box3.value)"
+/>
 <h1 (mouseover)="getData('over')">Hello jems Balar</h1>
 <h1 (mouseleave)="getData('leave')">Jems Balar</h1>
 <button (click)="counter('minus')">--</button>
-<p>count : {{count}}</p>
+<p>count : {{ count }}</p>
 <button (click)="counter('add')">++</button>
